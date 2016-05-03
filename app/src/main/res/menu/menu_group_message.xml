@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.vivi.letsgo.ui.ListGroupMessageActivity">
+
+    <item
+        android:id="@+id/action_add"
+        android:title="添加"
+        android:orderInCategory="100"
+        android:icon="@drawable/menu_add_message"
+        app:showAsAction="ifRoom" />
+</menu>

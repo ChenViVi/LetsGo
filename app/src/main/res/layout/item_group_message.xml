@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:id="@+id/layout_group_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/nimg_headimg"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+            <TextView
+                android:id="@+id/tv_message_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorBlack"
+                android:textSize="20sp"
+                android:layout_marginLeft="3dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/nimg_headimg" />
+
+            <TextView
+                android:id="@+id/tv_message_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorGray"
+                android:textSize="12sp"
+                android:layout_alignBottom="@+id/nimg_headimg"
+                android:layout_alignStart="@+id/tv_message_user_name" />
+
+            <TextView
+                android:id="@+id/tv_message_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorBlack"
+                android:textSize="15sp"
+                android:layout_below="@id/nimg_headimg"
+                android:layout_marginTop="2dp" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/nimg_message_image_00"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_below="@id/tv_message_content"
+                android:layout_marginTop="2dp"
+                android:visibility="gone"/>
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/nimg_message_image_01"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_alignBottom="@+id/nimg_message_image_00"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/nimg_message_image_02"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_alignBottom="@+id/nimg_message_image_00"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"/>
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/nimg_message_image_03"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_below="@id/nimg_message_image_00"
+                android:layout_marginTop="2dp"
+                android:visibility="gone"/>
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/nimg_message_image_04"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_alignBottom="@+id/nimg_message_image_03"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/nimg_message_image_05"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_alignBottom="@+id/nimg_message_image_03"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"/>
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/nimg_message_image_06"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_below="@id/nimg_message_image_03"
+                android:layout_marginTop="2dp"
+                android:visibility="gone"/>
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/nimg_message_image_07"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_alignBottom="@+id/nimg_message_image_06"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/nimg_message_image_08"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_alignBottom="@+id/nimg_message_image_06"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_comment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/bg_btn_comment"
+                android:layout_below="@id/nimg_message_image_06"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:id="@+id/btn_thumb"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/bg_btn_thumb"
+                android:layout_below="@id/nimg_message_image_06"
+                android:layout_toStartOf="@id/btn_comment" />
+
+        </RelativeLayout>
+
+        <com.example.vivi.letsgo.ui.view.NoScrollListView
+            android:id="@+id/layout_group_message_discuss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_group_message"
+            android:divider="@null"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

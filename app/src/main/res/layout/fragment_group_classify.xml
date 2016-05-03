@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/windowBackgroundGray">
+
+    <RelativeLayout
+        android:id="@+id/layout_group_classify_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <RelativeLayout
+                android:id="@+id/layout_group_classify_club"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_group_classify_club_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/classify_club"/>
+
+                <TextView
+                    android:id="@+id/tv_group_classify_club_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="20sp"
+                    android:text="社团"
+                    android:layout_below="@id/img_group_classify_club_image"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_group_classify_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:id="@+id/img_group_classify_food_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/classify_food"/>
+
+                <TextView
+                    android:id="@+id/tv_group_classify_food_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="20sp"
+                    android:text="美食"
+                    android:layout_below="@id/img_group_classify_food_image"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_group_classify_sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true" >
+
+                <ImageView
+                    android:id="@+id/img_group_classify_sport_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/classify_sport"/>
+
+                <TextView
+                    android:id="@+id/tv_group_classify_sport_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="20sp"
+                    android:text="运动"
+                    android:layout_below="@id/img_group_classify_sport_image"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_group_classify_movie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/layout_group_classify_club"
+                android:layout_marginTop="40dp">
+
+                <ImageView
+                    android:id="@+id/img_group_classify_movie_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/classify_movie"/>
+
+                <TextView
+                    android:id="@+id/tv_group_classify_movie_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="20sp"
+                    android:text="电影"
+                    android:layout_below="@id/img_group_classify_movie_image"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_group_classify_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/layout_group_classify_food"
+                android:layout_marginTop="40dp">
+
+                <ImageView
+                    android:id="@+id/img_group_classify_music_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/classify_music"/>
+
+                <TextView
+                    android:id="@+id/tv_group_classify_music_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="20sp"
+                    android:text="音乐"
+                    android:layout_below="@id/img_group_classify_music_image"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_group_classify_business"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/layout_group_classify_sport"
+                android:layout_marginTop="40dp">
+
+                <ImageView
+                    android:id="@+id/img_group_classify_business_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/classify_mix"/>
+
+                <TextView
+                    android:id="@+id/tv_group_classify_business_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="20sp"
+                    android:text="业务交流"
+                    android:layout_below="@id/img_group_classify_business_image"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_group_classify_mix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/layout_group_classify_movie"
+                android:layout_marginTop="40dp">
+
+                <ImageView
+                    android:id="@+id/img_group_classify_mix_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/classify_mix"/>
+
+                <TextView
+                    android:id="@+id/tv_group_classify_mix_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="20sp"
+                    android:text="综合"
+                    android:layout_below="@id/img_group_classify_mix_image"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

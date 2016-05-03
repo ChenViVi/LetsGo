@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:id="@+id/layout_list_group_message">
+
+    <com.example.vivi.letsgo.ui.view.MyRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+        </ListView>
+
+    </com.example.vivi.letsgo.ui.view.MyRefreshLayout>
+
+
+    <!-- 下面的分享、评论、转载、收藏 -->
+    <!-- 输入框、留言按钮 -->
+    <LinearLayout
+        android:id="@+id/layout_group_message_discuss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@color/windowBackgroundGray">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- 输入框 -->
+            <EditText
+                android:id="@+id/edit_discuss"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="20dp"
+                android:inputType="textMultiLine"
+                android:gravity="left"
+                android:maxLines="6"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp" />
+            <!-- 留言按钮 -->
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:textColor="#000000"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_btn_send_enable"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

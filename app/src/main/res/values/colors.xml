@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#339933</color>
+    <color name="colorPrimaryDark">#339933</color>
+
+    <color name="windowBackgroundGray">#37747474</color>
+    <color name="windowBackgroundWhite">#ffffff</color>
+    <color name="windowBackgroundBlack">#000000</color>
+    <color name="windowBackgroundPrimary">#339933</color>
+
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="textColorPrimary">#339933</color>
+    <color name="textColorWhite">#FFFFFF</color>
+    <color name="textColorDark">#669933</color>
+    <color name="textColorBlack">#000000</color>
+    <color name="textColorGray">#808080</color>
+
+
+    <color name="enable">#339933</color>
+    <color name="disable">#7EFE7E</color>
+
+</resources>

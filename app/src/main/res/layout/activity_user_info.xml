@@ -1,0 +1,99 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vivi.letsgo.ui.UserInfoActivity"
+    android:background="@color/windowBackgroundGray"
+    android:id="@+id/scroll_view">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layout_user_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/windowBackgroundPrimary"
+            android:paddingBottom="10dp">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/nimg_user_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorWhite"
+                android:textSize="15sp"
+                android:layout_below="@id/nimg_user_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:id="@+id/tv_user_signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorWhite"
+                android:textSize="12sp"
+                android:layout_below="@id/tv_user_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_user_brief"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_user_header"
+            android:background="@color/windowBackgroundWhite">
+
+            <TextView
+                android:id="@+id/tv_user_brief"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="个人简介"
+                android:textColor="@color/textColorGray"
+                android:textSize="12sp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"/>
+
+            <com.example.vivi.letsgo.ui.view.NoScrollListView
+                android:id="@+id/list_user_brief"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_user_brief" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_user_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_user_brief"
+            android:layout_marginTop="10dp"
+            android:background="@color/windowBackgroundWhite">
+
+            <TextView
+                android:id="@+id/tv_user_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="加入圈子"
+                android:textColor="@color/textColorGray"
+                android:textSize="12sp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"/>
+                <com.example.vivi.letsgo.ui.view.NoScrollListView
+                    android:id="@+id/list_user_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_user_group"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
